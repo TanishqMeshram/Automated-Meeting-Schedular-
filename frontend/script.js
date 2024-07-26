@@ -10,7 +10,7 @@ async function scheduleMeeting() {
     responseDiv.innerHTML = "Scheduling meeting...";
 
     try {
-        const response = await fetch("http://localhost:8000/schedule-meeting/", {
+        const response = await fetch("https://automated-meeting-schedular.onrender.com/schedule-meeting/", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
