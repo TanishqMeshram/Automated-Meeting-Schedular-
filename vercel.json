@@ -1,0 +1,7 @@
+{
+    "functions": {
+    "api/schedule-weekly-meeting": {
+      "cron": "30 14 * * 5"
+    }
+  }
+}
