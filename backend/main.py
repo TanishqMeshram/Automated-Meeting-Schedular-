@@ -52,7 +52,6 @@ def get_access_token():
     
     if response.status_code == 200:
         response_data = response.json()
-        logging.info(f"Response data: {response_data.get("access_token")}")
         return response_data.get("access_token")
     else:
         logging.error(f"Failed to get access token: {response.text}")
