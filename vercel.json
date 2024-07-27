@@ -1,8 +1,24 @@
 {
-  "crons": [
+  "version": 2,
+  "builds": [
     {
-      "path": "/schedule-weekly-meeting",
-      "schedule": "10 13 * * *"
+      "src": "backend/main.py",
+      "use": "@vercel/python",
+      "config": {
+        "maxLambdaSize": "50mb"
+      }
     }
-  ]
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "backend/main.py"
+    }
+  ],
+  "functions": {
+    "schedule-weekly-meeting": {
+      "runtime": "@vercel/python",
+      "cron": "0 14 * * 5"
+    }
+  }
 }
