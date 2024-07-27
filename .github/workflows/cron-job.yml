@@ -10,5 +10,5 @@ jobs:
     steps:
       - name: Make HTTP request
         run: |
-          curl -X POST https://automated-meeting-schedular.onrender.com/schedule-weekly-meeting/
+          curl -X POST https://your-render-url.com/schedule-weekly-meeting/ \
                -H "Authorization: Bearer AUTOMATED1MEETING2SCHEDULER"
