@@ -2,7 +2,7 @@ name: Schedule Weekly Meeting
 
 on:
   schedule:
-    - cron: '* * * * *'
+    - cron: '30 15 * * 6'
 
 jobs:
   run:
