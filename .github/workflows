@@ -1,0 +1,13 @@
+name: Schedule Weekly Meeting
+
+on:
+  schedule:
+    - cron: '* * * * *'
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Make HTTP request
+        run: |
+          curl -X POST https://automated-meeting-schedular.onrender.com/schedule-weekly-meeting/
