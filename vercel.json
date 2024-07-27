@@ -3,7 +3,7 @@
   "functions": {
     "api/schedule-weekly-meeting.py": {
       "runtime": "@vercel/python",
-      "schedule": "0 14 * * 5"  // Schedule function to run at 8:00 PM IST (2:00 PM UTC)
+      "schedule": "0 14 * * 5"
     }
   },
   "routes": [
