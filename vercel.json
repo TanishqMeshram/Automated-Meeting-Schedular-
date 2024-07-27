@@ -2,7 +2,7 @@
   "crons": [
     {
       "path": "/schedule-weekly-meeting",
-      "schedule": "* * * * *"
+      "schedule": "10 13 * * *"
     }
   ]
 }
